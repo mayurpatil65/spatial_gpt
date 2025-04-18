@@ -55,7 +55,7 @@ Inspired by language models like GPT, this project treats **location prediction*
 
 
 ## 🔧 Model Architecture
-
+```text
 Input: [S2_ID_t0, S2_ID_t1, ..., S2_ID_tN]
            │
      Token Embedding + Positional Encoding
