@@ -18,7 +18,6 @@ The model is evaluated using **Haversine distance** between actual and generated
 ✅ Evaluates spatial errors using Haversine distance  
 ✅ Visualizes predictions (lat/lng plots) and error per step  
 
----
 
 ## Model Overview
 
@@ -46,7 +45,6 @@ Inspired by language models like GPT, this project treats **location prediction*
 - **Mobility modeling**
 - **Logistics and delivery path forecasting**
 
----
 
 ## Key Concepts
 
@@ -55,7 +53,6 @@ Inspired by language models like GPT, this project treats **location prediction*
 - **Evaluation**: Uses **Haversine distance** to compute error between actual and predicted locations.
 - **Sampling**: Implements top-k, top-p sampling and temperature scaling to generate realistic location sequences.
 
----
 
 ## 🔧 Model Architecture
 
