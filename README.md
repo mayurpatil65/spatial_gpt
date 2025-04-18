@@ -96,3 +96,37 @@ Input: [S2_ID_t0, S2_ID_t1, ..., S2_ID_tN]
      LayerNorm → Linear → Vocabulary logits
            │
       Next Token Prediction
+```
+
+# Part 3
+## Secure SpatialGPT – Adversarial Robustness for Spatial Trajectory Prediction
+
+This extends vanilla **SpatialGPT** model to evaluate its robustness under adversarial perturbations in the spatial embedding space.
+
+---
+
+## Key Features
+- Has **adversarial attacks**:
+  - `FGSM` (Fast Gradient Sign Method)
+  - `PGD` (Projected Gradient Descent)
+  - `Random Noise`
+
+---
+
+## Adversarial Setup
+
+Attacks are performed **in embedding space**:
+- Embedding perturbations modify prediction trajectories
+- Attacks evaluate **spatial deviation** (distance in meters)
+
+### Example: Evaluate model under PGD attack
+evaluate_under_attack(model, val_data, pgd_attack, epsilon=0.1, alpha=0.01, iters=5)
+
+
+## Visualizations
+1. Spatial plots of actual vs. generated paths under attack
+2. Per-step distance error plots
+3. Aggregated error bar charts across attack types
+
+## Use Case
+Helps evaluate and visualize robustness of spatio-temporal transformers in the presence of adversarial noise — crucial for applications in autonomous systems, geo-AI, and secure trajectory forecasting.
