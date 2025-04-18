@@ -2,6 +2,9 @@
 
 # SpatialGPT — A GPT-Style Model for Predicting Spatial Trajectories
 
+File can be found in 
+Directory: 3_SpatialGPT_Delta_Embeddings_Dual_Decoder --> SptialGPT_Normalize_Token_Frequency.ipynb
+
 **SpatialGPT** is a transformer-based autoregressive model designed to predict **next locations** in a spatial sequence using tokenized S2 Cell IDs. 
 Inspired by language models like GPT, this project treats **location prediction** as a sequence modeling problem, making it useful for:
 
