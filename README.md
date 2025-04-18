@@ -11,12 +11,12 @@ The model is evaluated using **Haversine distance** between actual and generated
 
 ## What This Notebook Does
 
-✅ Loads pre-tokenized spatial data (S2 level-16)  
-✅ Trains a TransformerDecoder model with positional encoding and dropout  
-✅ Applies early stopping and checkpoint saving  
-✅ Generates spatial trajectories using top-k / top-p sampling  
-✅ Evaluates spatial errors using Haversine distance  
-✅ Visualizes predictions (lat/lng plots) and error per step  
+1. Loads pre-tokenized spatial data (S2 level-16)  
+2. Trains a TransformerDecoder model with positional encoding and dropout  
+3. Applies early stopping and checkpoint saving  
+4. Generates spatial trajectories using top-k / top-p sampling  
+5. Evaluates spatial errors using Haversine distance  
+6. Visualizes predictions (lat/lng plots) and error per step  
 
 
 ## Model Overview
