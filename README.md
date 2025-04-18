@@ -30,6 +30,35 @@ TransformerDecoder (4 layers, 4 heads)
 LayerNorm + Linear → Vocabulary logits
 
 
+Embedding dim: 128, Layers: 4, Heads: 4, Block size: 64, Dropout: 10%, Vocab size: 103,244 (unique S2 Cell IDs)
+
+## Training Configuration
+Optimizer: AdamW
+
+LR Scheduler: CosineAnnealing
+
+Loss: CrossEntropy
+
+Early stopping: patience=5
+
+Checkpoints saved every 5k steps
+
+Sampling enabled for progress monitoring
+
+## Evaluation Metrics
+Autoregressive generation for 20 future steps
+
+Haversine distance between actual and predicted coordinates
+
+Plots:
+1. Actual vs generated lat/lng paths
+2. Haversine error per step
+
+## Key Insights
+1. Distance-based loss (Haversine) offers richer insight than token accuracy.
+2. Dropout and LR scheduling help stabilize long-sequence prediction.
+3. Trajectories are generative, not just classification—closer to sequence modeling in NLP.
+
 
 # Part 2
 
